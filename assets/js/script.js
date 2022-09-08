@@ -19,7 +19,9 @@
         //   api response will display forecast for selected city
           axios.get(queryURL)
               .then(function(response) {
+                
                 // uses current date to get weather forecast
+
                   const currentDate = new Date(response.data.dt * 1000);
                   const day = currentDate.getDate();
                   const month = currentDate.getMonth() + 1;
